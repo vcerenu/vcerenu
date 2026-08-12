@@ -66,7 +66,7 @@
 ## GitHub highlights
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=vcerenu&hide_border=true" alt="GitHub streak" height="180" />
+  <img src="./profile/stats.svg" alt="GitHub stats" />
 </p>
 
 ![Open Source](https://img.shields.io/badge/Open_Source-Contributor-3DA639?style=flat)
@@ -98,4 +98,3 @@ Public deployment repositories I maintain as part of my role as DevOps Engineer 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vcerenu)
 [![Email](https://img.shields.io/badge/vcerenu@gmail.com-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:vcerenu@gmail.com)
-
