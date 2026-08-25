@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Victor Carlos Ereñú — DevOps / SRE Engineer</title>
+<style>
+  :root {
+    --accent: #0e5a8a;
+    --accent-dark: #0a4266;
+    --text: #222b33;
+    --muted: #5b6b79;
+    --line: #d7dee5;
+    --bg-soft: #f2f6f9;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--text);
+    font-size: 12.5px;
+    line-height: 1.5;
+    background: #e9edf1;
+  }
+  .page {
+    max-width: 210mm;
+    margin: 0 auto;
+    background: #fff;
+    padding: 14mm 15mm;
+    min-height: 297mm;
+  }
+
+  /* Header */
+  header { border-bottom: 3px solid var(--accent); padding-bottom: 10px; margin-bottom: 14px; }
+  h1 {
+    font-size: 30px;
+    letter-spacing: 0.5px;
+    color: var(--accent-dark);
+    font-weight: 800;
+  }
+  .role {
+    font-size: 15px;
+    color: var(--accent);
+    font-weight: 600;
+    margin-top: 2px;
+  }
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 18px;
+    margin-top: 10px;
+    font-size: 11.5px;
+    color: var(--muted);
+  }
+  .contact span { display: inline-flex; align-items: center; gap: 5px; }
+
+  /* Sections */
+  section { margin-bottom: 15px; }
+  h2 {
+    font-size: 13.5px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--accent-dark);
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 4px;
+    margin-bottom: 9px;
+    font-weight: 700;
+  }
+  h2 .icon { color: var(--accent); margin-right: 6px; }
+
+  p.summary { text-align: justify; }
+
+  /* Skills */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+    row-gap: 7px;
+  }
+  .skill-item { display: flex; gap: 8px; }
+  .skill-item .label {
+    min-width: 118px;
+    font-weight: 700;
+    color: var(--accent-dark);
+  }
+  .skill-item .value { color: var(--text); }
+
+  /* Experience */
+  .job { margin-bottom: 13px; page-break-inside: avoid; }
+  .job:last-child { margin-bottom: 0; }
+  .job-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 2px 12px;
+  }
+  .job-title { font-size: 13.5px; font-weight: 700; color: var(--text); }
+  .job-title .company { color: var(--accent-dark); }
+  .job-date {
+    font-size: 11.5px;
+    color: var(--muted);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .job-tag {
+    display: inline-block;
+    margin-top: 4px;
+    font-size: 10.5px;
+    color: var(--accent-dark);
+    background: var(--bg-soft);
+    padding: 1px 8px;
+    border-radius: 10px;
+    border: 1px solid var(--line);
+  }
+  ul.job-duties { margin: 5px 0 0 16px; }
+  ul.job-duties li { margin-bottom: 3px; }
+  ul.job-duties li::marker { color: var(--accent); }
+
+  /* Lists */
+  ul.two-col {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+    row-gap: 3px;
+  }
+  ul.two-col li { padding-left: 14px; position: relative; }
+  ul.two-col li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+  }
+
+  /* Education */
+  .edu { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2px 12px; }
+  .edu .school { font-weight: 700; }
+  .edu .date { color: var(--muted); font-size: 11.5px; white-space: nowrap; }
+  .edu .degree { color: var(--muted); }
+
+  @media print {
+    body { background: #fff; font-size: 12px; }
+    .page { padding: 0; max-width: none; min-height: auto; }
+    a { color: inherit; text-decoration: none; }
+  }
+  @page { size: A4; margin: 14mm 15mm; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <h1>Victor Carlos Ereñú</h1>
+    <div class="role">DevOps / Site Reliability Engineer</div>
+    <div class="contact">
+      <span>📞 +54 9351 2255466</span>
+      <span>✉️ vcerenu@gmail.com</span>
+      <span>🔗 linkedin.com/in/vcerenu</span>
+      <span>🐙 github.com/vcerenu</span>
+    </div>
+  </header>
+
+  <section>
+    <h2><span class="icon">▍</span>Summary</h2>
+    <p class="summary">
+      DevOps Engineer with 5+ years focused on infrastructure and 15+ years across IT, databases,
+      and data platforms. At <strong>Wazuh</strong>, one of the world's largest open-source security
+      platforms, I maintain the 6 public deployment repositories (Docker, Kubernetes, Puppet,
+      Ansible, virtual machines, installation assistant) and coordinate release engineering across them
+      — coordinating cross-repo version merges, changelogs, and LTS branches. I build and maintain
+      CI/CD pipelines (Jenkins, GitHub Actions, AWS CodeBuild) for demo, training, and test
+      environments, having shipped 1000+ PRs with a 93% merge rate. Experienced in AWS and
+      Oracle Cloud, container orchestration, configuration management, and deep database expertise
+      spanning Oracle, SQL Server, and data warehouse tuning on Exadata.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="icon">▍</span>Core Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-item"><span class="label">Cloud &amp; IaC</span><span class="value">AWS (EC2, VPC, EKS, ELB, CloudFormation), Oracle Cloud (OKS, VCN, Block Volumes), Microsoft Azure / Entra ID (user management, permissions, license assignment), Terraform</span></div>
+      <div class="skill-item"><span class="label">Containers &amp; Orchestration</span><span class="value">Docker, Kubernetes, Rancher, kubectl, Dockerfiles</span></div>
+      <div class="skill-item"><span class="label">CI/CD</span><span class="value">Jenkins, GitHub Actions, AWS CodeBuild, Jenkinsfiles, Bitbucket Pipelines</span></div>
+      <div class="skill-item"><span class="label">Configuration Management</span><span class="value">Ansible, Puppet</span></div>
+      <div class="skill-item"><span class="label">OS &amp; Scripting</span><span class="value">Linux, Bash</span></div>
+      <div class="skill-item"><span class="label">Databases</span><span class="value">Oracle 8i–12c, RMAN, OEM Cloud Control, SQL Server 2012–2016, PL/SQL</span></div>
+      <div class="skill-item"><span class="label">Data Warehousing</span><span class="value">Exadata, table partitioning, query tuning</span></div>
+      <div class="skill-item"><span class="label">Backup &amp; DR</span><span class="value">Dell EMC Networker, hot/cold backups, DR contingency plans</span></div>
+      <div class="skill-item"><span class="label">Security / Monitoring</span><span class="value">Wazuh (SIEM/XDR)</span></div>
+      <div class="skill-item"><span class="label">Methodologies</span><span class="value">Agile / Scrum, Jira, Confluence</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="icon">▍</span>Professional Experience</h2>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title">DevOps Engineer — <span class="company">Wazuh, Inc.</span></div>
+        <div class="job-date">Aug 2021 – Present</div>
+      </div>
+      <span class="job-tag">Open-source cybersecurity · Remote</span>
+      <ul class="job-duties">
+        <li>Maintain the 6 public deployment repositories for the Wazuh platform (Docker, Kubernetes, Puppet, Ansible, virtual machines, installation assistant), serving a global open-source security community.</li>
+        <li>Coordinate release engineering across all deployment repos: coordinate cross-repo version merges (e.g., 4.x → 5.x), changelog management, and LTS branch maintenance.</li>
+        <li>Build and maintain CI/CD pipelines with Jenkins, GitHub Actions, and AWS CodeBuild — including workflow revamp, runner migration, goss integration tests, and artifact management for demo, training, and test environments.</li>
+        <li>Implement container engineering improvements: startup/liveness/readiness probes, image build process optimization, and UID/GID hardening across Wazuh components.</li>
+        <li>Provision AWS environments (EC2, EKS) using CloudFormation, managing VPC, ELB, and EKS infrastructure.</li>
+        <li>Administer Microsoft Azure / Entra ID for the organization, including user management, permissions, and license assignment.</li>
+        <li>Build and maintain CI/CD automation infrastructure: AMI/OVA image builds, EKS cluster deployment/teardown workflows, and Jenkins configuration as code.</li>
+        <li>Coordinate cross-team development through internal feature and development request triage, tracking requirements across engineering teams.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title">DevOps Engineer — <span class="company">AyiGroup</span></div>
+        <div class="job-date">Feb 2021 – Aug 2021</div>
+      </div>
+      <ul class="job-duties">
+        <li>Administered Kubernetes clusters on Oracle Kubernetes Services (OKS) using Rancher and kubectl.</li>
+        <li>Created and maintained CI/CD deployment pipelines in Jenkins using Jenkinsfiles.</li>
+        <li>Built Docker images with Dockerfiles and managed configuration deploys via Git/Bitbucket.</li>
+        <li>Managed Oracle Cloud resources (VCN, block volumes, virtual machines).</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title">Oracle &amp; SQL Server DBA — <span class="company">AyiGroup</span></div>
+        <div class="job-date">Nov 2018 – Feb 2021</div>
+      </div>
+      <ul class="job-duties">
+        <li>Administered production and non-production Oracle and SQL Server databases, including cloning production instances into homologation, test, and development environments.</li>
+        <li>Installed Oracle 11g/12c instances on IBM AIX and SQL Server (single and HA) on ESX virtual machines.</li>
+        <li>Managed backups with Dell EMC Networker and supported recovery procedures.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title">Data Architect — <span class="company">AMX Argentina</span></div>
+        <div class="job-date">Jul 2015 – Nov 2018</div>
+      </div>
+      <ul class="job-duties">
+        <li>Designed, programmed, and implemented a data warehouse, including functional analysis and stored procedures for table refresh.</li>
+        <li>Tuned daily refresh processes on Exadata using table partitioning and query optimization.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title">Oracle DBA — <span class="company">Hewlett Packard</span></div>
+        <div class="job-date">May 2008 – Jul 2015</div>
+      </div>
+      <ul class="job-duties">
+        <li>Administered Oracle 8i, 9i, 10g, 11g, and SQL Server databases across multiple clients.</li>
+        <li>Performed cold/hot backup and recovery; deployed new databases and schemas.</li>
+        <li>Led DR incidents using different contingency plans; delivered knowledge transfer and client intake.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="icon">▍</span>Education</h2>
+    <div class="edu">
+      <div>
+        <div class="school">Universidad Tecnológica Nacional (UTN) — Córdoba, Argentina</div>
+        <div class="degree">Information Systems Engineering (completed through third year)</div>
+      </div>
+      <div class="date">2004 – 2010</div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="icon">▍</span>Certifications</h2>
+    <ul class="two-col">
+      <li>Oracle Database 11g Administrator Certified Associate (OCA)</li>
+      <li>Oracle Autonomous Database Cloud 2019 Certified Specialist</li>
+      <li>Oracle Cloud Infrastructure 2019 Certified Architect Associate</li>
+      <li>Oracle Cloud Infrastructure Foundations 2020 Certified Associate</li>
+      <li>Scrum Foundation Professional Certificate (SFPC)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="icon">▍</span>Training</h2>
+    <ul class="two-col">
+      <li>PL/SQL Programming</li>
+      <li>Oracle Database Administration</li>
+      <li>SQL Server Administration</li>
+      <li>Linux</li>
+      <li>Docker</li>
+      <li>Kubernetes</li>
+      <li>Git</li>
+      <li>Jenkins</li>
+      <li>Ansible</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="icon">▍</span>Languages</h2>
+    <ul class="two-col">
+      <li>Spanish — Native</li>
+      <li>English — Intermediate</li>
+    </ul>
+  </section>
+
+</div>
+</body>
+</html>
