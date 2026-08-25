@@ -70,7 +70,8 @@
 </p>
 
 ![Open Source](https://img.shields.io/badge/Open_Source-Contributor-3DA639?style=flat)
-![PRs merged](https://img.shields.io/badge/1000%2B-PRs_merged-2496ED?style=flat)
+![PRs](https://img.shields.io/badge/1000%2B-PRs_shipped-2496ED?style=flat)
+![Merge rate](https://img.shields.io/badge/93%25-merge_rate-2496ED?style=flat)
 ![Maintainer](https://img.shields.io/badge/Maintainer-6_Wazuh_repos-1B8BF0?style=flat)
 ![Experience](https://img.shields.io/badge/5%2B_years-DevOps-EE0000?style=flat)
 ![Experience](https://img.shields.io/badge/15%2B_years-IT-7B42BC?style=flat)
