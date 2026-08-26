@@ -98,4 +98,4 @@ Public deployment repositories I maintain as part of my role as DevOps Engineer 
 ## Contact
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vcerenu)
-[![Email](https://img.shields.io/badge/vcerenu@gmail.com-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:vcerenu@gmail.com)
+[![Email](https://img.shields.io/badge/victor%40vcerenu.com.ar-0e5a8a?style=flat)](mailto:victor@vcerenu.com.ar)
