@@ -30,6 +30,35 @@
     min-height: 297mm;
   }
 
+  /* Site nav (web only) */
+  .site-nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+    padding: 12px 24px;
+    background: rgba(10,66,102,.96);
+    color: #fff;
+  }
+  .site-nav .brand { color: #fff; text-decoration: none; font-weight: 700; letter-spacing: .3px; }
+  .nav-actions { display: flex; align-items: center; gap: 8px; }
+  .nav-actions .lang {
+    color: #cfe3f2; text-decoration: none; padding: 4px 10px;
+    border-radius: 6px; font-weight: 600; font-size: 13px;
+  }
+  .nav-actions .lang:hover { background: rgba(255,255,255,.15); }
+  .nav-actions .lang[aria-current="page"] { background: #fff; color: var(--accent-dark); }
+  .print-btn {
+    background: #fff; color: var(--accent-dark); border: none;
+    padding: 7px 14px; border-radius: 6px; font-weight: 600;
+    cursor: pointer; font-size: 13px;
+  }
+  .print-btn:hover { background: var(--bg-soft); }
+
   /* Header */
   header { border-bottom: 3px solid var(--accent); padding-bottom: 10px; margin-bottom: 14px; }
   h1 {
@@ -52,7 +81,11 @@
     font-size: 11.5px;
     color: var(--muted);
   }
-  .contact span { display: inline-flex; align-items: center; gap: 5px; }
+  .contact a {
+    display: inline-flex; align-items: center; gap: 5px;
+    color: var(--muted); text-decoration: none;
+  }
+  .contact a:hover { color: var(--accent); }
 
   /* Sections */
   section { margin-bottom: 15px; }
@@ -139,25 +172,57 @@
   .edu .date { color: var(--muted); font-size: 11.5px; white-space: nowrap; }
   .edu .degree { color: var(--muted); }
 
+  @media screen {
+    body { font-size: 15px; line-height: 1.6; }
+    .page {
+      max-width: 900px;
+      margin: 24px auto;
+      padding: 48px 56px;
+      min-height: auto;
+      border-radius: 12px;
+      box-shadow: 0 12px 40px rgba(10,66,102,.12);
+    }
+    h1 { font-size: 40px; }
+    .role { font-size: 17px; }
+    h2 { font-size: 16px; letter-spacing: 1.4px; }
+    .job-title { font-size: 15.5px; }
+    section { margin-bottom: 20px; }
+  }
+  @media screen and (max-width: 640px) {
+    .page { margin: 0; border-radius: 0; padding: 28px 20px; }
+    .skills-grid, ul.two-col { grid-template-columns: 1fr; }
+    .skill-item { flex-direction: column; gap: 2px; }
+    .skill-item .label { min-width: 0; }
+    .site-nav { padding: 12px 16px; }
+  }
   @media print {
     body { background: #fff; font-size: 12px; }
     .page { padding: 0; max-width: none; min-height: auto; }
+    .site-nav { display: none; }
     a { color: inherit; text-decoration: none; }
   }
   @page { size: A4; margin: 14mm 15mm; }
 </style>
 </head>
 <body>
+<nav class="site-nav">
+  <a class="brand" href="index.html">Victor Carlos Ereñú</a>
+  <div class="nav-actions">
+    <a class="lang" href="es.html">ES</a>
+    <a class="lang" href="en.html" aria-current="page">EN</a>
+    <button class="print-btn" type="button" onclick="window.print()">🖨 Print / PDF</button>
+  </div>
+</nav>
 <div class="page">
 
   <header>
     <h1>Victor Carlos Ereñú</h1>
     <div class="role">DevOps / Site Reliability Engineer</div>
     <div class="contact">
-      <span>📞 +54 9351 2255466</span>
-      <span>✉️ victor@vcerenu.com.ar</span>
-      <span>🔗 linkedin.com/in/vcerenu</span>
-      <span>🐙 github.com/vcerenu</span>
+      <a href="tel:+5493512255466">📞 +54 9351 2255466</a>
+      <a href="mailto:victor@vcerenu.com.ar">✉️ victor@vcerenu.com.ar</a>
+      <a href="https://www.linkedin.com/in/vcerenu" target="_blank" rel="noopener">🔗 linkedin.com/in/vcerenu</a>
+      <a href="https://github.com/vcerenu" target="_blank" rel="noopener">🐙 github.com/vcerenu</a>
     </div>
   </header>
 
