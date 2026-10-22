@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Victor Ere&#241;&#250;&#39;s GitHub Stats, Rank: A-</title>
-        <desc id="descId">Total Stars Earned: 0, Total Commits  : 20892, Total PRs: 1118, Total Issues: 203, Contributed to (last year): 7</desc>
+        <desc id="descId">Total Stars Earned: 0, Total Commits  : 20892, Total PRs: 1120, Total Issues: 205, Contributed to (last year): 7</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 90.60723320380914;
+        stroke-dashoffset: 90.60317195992393;
       }
     }
   
@@ -214,7 +214,7 @@
         x="224.01"
         y="12.5"
         data-testid="issues"
-      >203</text>
+      >205</text>
     </g>
   </g><g transform="translate(0, 100)">
     <g class="stagger" style="animation-delay: 1050ms" transform="translate(25, 0)">
